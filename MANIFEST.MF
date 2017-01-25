@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: PWDMain
+Class-Path: lib/commons-codec-1.10.jar
+
