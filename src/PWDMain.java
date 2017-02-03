@@ -70,6 +70,23 @@ public class PWDMain {
 	
 	public static void cmdHelp(String cmd){
 		System.out.println("This is cmd help!");
+		//list\\add\\change\\delete\\save\\copy\\exit
+		if(cmd.equals("list"))
+			System.out.println("list [tagX] \n0 argument: list all the tags in this password book!\n1 argument: list the detailed information of the record that contains the tagX.");
+		else if(cmd.equals("add"))
+			System.out.println("add \n0 argument: Add a new record into the password book.");
+		else if(cmd.equals("change"))
+			System.out.println("change tagX\n1 argument: Change the password of the record that contains the tagX.");
+		else if(cmd.equals("delete"))
+			System.out.println("delete tagX\n1 argument: Delete the password of the record that contains the tagX.");
+		else if(cmd.equals("save"))
+			System.out.println("save\n0 argument: Save all the records into the password book.");
+		else if(cmd.equals("copy"))
+			System.out.println("copy tagX.\n1 argument: Copy the password of the record that contains the tagX into the system clipboard");
+		else if(cmd.equals("exit"))
+			System.out.println("exit\n0 argument: Exit the password book. Before quit, all the records will be saved into the password book.");
+		else
+			System.out.println("Invalid commands!");
 	}
 	
 	public static void searchPWD(String args[]){
